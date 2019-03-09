@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        ul{
+            margin: 0px;
+            padding: 0px;
+        }
+        #app {
+            width: 400px;
+            margin: 50px auto;
+            border: 1px solid #bcbcbc;
+        }
+        #app>input:first-child {
+            width: 368px;
+            margin: 10px;
+            padding: 5px;
+        }
+        ul li {
+            list-style: none;
+            border: 1px solid #bcbcbc;
+            margin: 10px;
+            padding: 5px;
+        }
+        label input {
+            margin: 10px 20px;
+            padding: 5px;
+        }
+        button{
+            border: none;
+            background-color: orangered;
+            margin-left: 38px;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <input type="text" placeholder="请输入今天的任务清单，按回车键确认">
+        <ul>
+            <li><input type="checkbox">打场高尔夫</li>
+            <li><input type="checkbox">会见奥巴马</li>
+            <li><input type="checkbox">回家敲代码</li>
+        </ul>
+        <label><input type="checkbox">&nbsp;&nbsp;&nbsp;已经完成1件/总计3件</label><button>清除已经完成的任务</button>
+    </div>
+</body>
+</html>
